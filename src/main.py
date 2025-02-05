@@ -213,7 +213,7 @@ def get_study_plan():
         prompt = prompt_generator.generate_prompt()
 
         # Call Gemini API
-        gemini = GeminiConnection(api_key="AIzaSyBReFGRnPgppr3hAa1go-A2c8bAris31us")  # Replace with your API key
+        gemini = GeminiConnection(api_key=api_key)  # Replace with your API key
         model = gemini.get_model()
         response = model.generate_content(prompt)
 
